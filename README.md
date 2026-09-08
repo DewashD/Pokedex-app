@@ -67,6 +67,4 @@ lib/                  # PokéAPI client & data helpers
 
 Originally built as a class project (CMPSC 421) exploring the Next.js App Router, server components, and working with a public REST API.
 
-## License
 
-MIT — see [LICENSE](LICENSE).
