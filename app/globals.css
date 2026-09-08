@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800;900&display=swap');
+
+:root {
+  --red: #e3350d;
+  --red-dark: #b02b0b;
+  --red-light: #ff6b4a;
+  --yellow: #ffcb05;
+  --yellow-dark: #c9a000;
+  --blue: #3d7dca;
+  --blue-dark: #2a5899;
+  --black: #1a1a2e;
+  --dark: #16213e;
+  --card-bg: #0f3460;
+  --surface: #1a2744;
+  --surface-light: #243459;
+  --text: #f0f0f0;
+  --text-muted: #8899bb;
+  --border: #2a3f6f;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--black);
+  color: var(--text);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(227, 53, 13, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(61, 125, 202, 0.08) 0%, transparent 40%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+}
+
+/* Type badge colors */
+.type-normal     { background: #9fa19f; color: #fff; }
+.type-fire       { background: #e62829; color: #fff; }
+.type-water      { background: #2980ef; color: #fff; }
+.type-electric   { background: #fac000; color: #1a1a2e; }
+.type-grass      { background: #3fa129; color: #fff; }
+.type-ice        { background: #3dcef3; color: #1a1a2e; }
+.type-fighting   { background: #ff8000; color: #fff; }
+.type-poison     { background: #9141cb; color: #fff; }
+.type-ground     { background: #915121; color: #fff; }
+.type-flying     { background: #81b9ef; color: #1a1a2e; }
+.type-psychic    { background: #ef4179; color: #fff; }
+.type-bug        { background: #91a119; color: #fff; }
+.type-rock       { background: #afa981; color: #1a1a2e; }
+.type-ghost      { background: #704170; color: #fff; }
+.type-dragon     { background: #5060e1; color: #fff; }
+.type-dark       { background: #49392f; color: #fff; }
+.type-steel      { background: #60a1b8; color: #1a1a2e; }
+.type-fairy      { background: #ef70ef; color: #fff; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
