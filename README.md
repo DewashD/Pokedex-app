@@ -7,7 +7,7 @@ A Pokédex web app built with Next.js, React, and TypeScript. Browse, search, an
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![CI](https://github.com/DewashD/pokedex-app/actions/workflows/ci.yml/badge.svg)
 
-**[Live Demo →](#)** *(add your Vercel URL here once deployed)*
+**[Live Demo →] https://pokedex-app-dewash.vercel.app
 
 ## Features
 
